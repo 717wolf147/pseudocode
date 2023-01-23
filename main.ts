@@ -12,7 +12,7 @@ input.onButtonPressed(Button.B, function () {
     music.playMelody("D C D - D - D C ", 153)
 })
 input.onPinPressed(TouchPin.P1, function () {
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 8; index++) {
         basic.showIcon(IconNames.Diamond)
         basic.showIcon(IconNames.SmallDiamond)
     }
@@ -20,4 +20,10 @@ input.onPinPressed(TouchPin.P1, function () {
 input.onGesture(Gesture.Shake, function () {
     basic.showIcon(IconNames.Butterfly)
     music.playMelody("D E F B C5 B A C5 ", 201)
+})
+input.onLogoEvent(TouchButtonEvent.Touched, function () {
+    for (let index = 0; index < 10; index++) {
+        basic.showIcon(IconNames.Heart)
+        basic.showIcon(IconNames.SmallHeart)
+    }
 })
