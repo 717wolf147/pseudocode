@@ -18,11 +18,6 @@ input.onPinPressed(TouchPin.P1, function () {
     }
 })
 input.onGesture(Gesture.Shake, function () {
-    if (true) {
-        basic.showIcon(IconNames.Yes)
-        music.playMelody("D E F B C5 B A C5 ", 201)
-    } else {
-        basic.showIcon(IconNames.Confused)
-        music.playMelody("F A E G F C D C ", 120)
-    }
+    basic.showIcon(IconNames.Butterfly)
+    music.playMelody("D E F B C5 B A C5 ", 201)
 })
